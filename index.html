@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="1.png" type="image/x-icon" />
+    <title>TIC-TAC-TOE</title>
+  </head>
+  <body>
+    <header>
+      <h1>TIC-TAC-TOE GAME BY RAHUL</h1>
+      <hr />
+      <p id="status"></p>
+    </header>
+    <hr />
+    <div class="container">
+      <div class="row">
+        <input type="text" readonly id="b1" onclick="func1(), mainFunc()" />
+        <input type="text" readonly id="b2" onclick="func2(), mainFunc()" />
+        <input type="text" readonly id="b3" onclick="func3(), mainFunc()" />
+      </div>
+      <div class="row">
+        <input type="text" readonly id="b4" onclick="func4(), mainFunc()" />
+        <input type="text" readonly id="b5" onclick="func5(), mainFunc()" />
+        <input type="text" readonly id="b6" onclick="func6(), mainFunc()" />
+      </div>
+      <div class="row">
+        <input type="text" readonly id="b7" onclick="func7(), mainFunc()" />
+        <input type="text" readonly id="b8" onclick="func8(), mainFunc()" />
+        <input type="text" readonly id="b9" onclick="func9(), mainFunc()" />
+      </div>
+      <div class="button">
+        <button id="btn" onclick="reset()">Reset</button>
+        <button id="btn" onclick="newGame()">Start New Game</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

@@ -339,7 +339,7 @@ function mainFunc() {
   }
 }
 
-//* Functio play by game
+//* Functions for checking values
 
 function func1() {
   if (check == 1) {

@@ -1,6 +1,18 @@
 //* Asking Player's Name
-let playerX = prompt("Enter name of Player X");
-let player0 = prompt("Enter name of player 0");
+let playerX;
+let player0;
+while (playerX == null || playerX == "") {
+  playerX = prompt("Enter name of Player X");
+  if(playerX==null || playerX==""){
+    window.alert("Please enter name of player");
+  }
+}
+while (player0 == null || player0 == "") {
+  player0 = prompt("Enter name of player 0");
+  if(player0==null || player0==""){
+    window.alert("Please enter name of player");
+  }
+}
 document.getElementById("status").innerText = `${playerX}'s Turn`;
 
 let check = 1;
